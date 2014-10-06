@@ -1,0 +1,1166 @@
+# Bake Begins!
+### (1 of 6) Copy sources
+$ cp -a /home/travis/build/fontdirectory/passionone/METADATA.json /home/travis/build/fontdirectory/passionone/builds/build
+$ cp -a /home/travis/build/fontdirectory/passionone/DESCRIPTION.en_us.html /home/travis/build/fontdirectory/passionone/builds/build
+$ cp -a /home/travis/build/fontdirectory/passionone/FONTLOG.txt /home/travis/build/fontdirectory/passionone/builds/build
+$ cp -a PassionOne-Regular.ttf.ttx PassionOne-Bold.ttf.ttx PassionOne-Black.ttf.ttx src/PassionOne-Regular.otf.ttx src/PassionOne-Bold.otf.ttx src/PassionOne-Black.otf.ttx src/PassionOne-Regular-TTF.sfd src/PassionOne-Bold-SFD.sfd src/PassionOne-Black-SFD.sfd PassionOne-Regular.ttf._p_r_e_p.ttx PassionOne-Regular.ttf._p_o_s_t.ttx PassionOne-Regular.ttf._n_a_m_e.ttx PassionOne-Regular.ttf._m_a_x_p.ttx PassionOne-Regular.ttf._l_o_c_a.ttx PassionOne-Regular.ttf._h_m_t_x.ttx PassionOne-Regular.ttf._h_h_e_a.ttx PassionOne-Regular.ttf._h_e_a_d.ttx PassionOne-Regular.ttf._g_l_y_f.ttx PassionOne-Regular.ttf._g_a_s_p.ttx PassionOne-Regular.ttf._c_m_a_p.ttx PassionOne-Regular.ttf.O_S_2f_2.ttx PassionOne-Regular.ttf.GlyphOrder.ttx PassionOne-Regular.ttf.G_D_E_F_.ttx PassionOne-Regular.ttf.F_F_T_M_.ttx PassionOne-Regular.ttf.D_S_I_G_.ttx PassionOne-Bold.ttf._p_r_e_p.ttx PassionOne-Bold.ttf._p_o_s_t.ttx PassionOne-Bold.ttf._n_a_m_e.ttx PassionOne-Bold.ttf._m_a_x_p.ttx PassionOne-Bold.ttf._l_o_c_a.ttx PassionOne-Bold.ttf._h_m_t_x.ttx PassionOne-Bold.ttf._h_h_e_a.ttx PassionOne-Bold.ttf._h_e_a_d.ttx PassionOne-Bold.ttf._g_l_y_f.ttx PassionOne-Bold.ttf._g_a_s_p.ttx PassionOne-Bold.ttf._c_m_a_p.ttx PassionOne-Bold.ttf.O_S_2f_2.ttx PassionOne-Bold.ttf.GlyphOrder.ttx PassionOne-Bold.ttf.G_D_E_F_.ttx PassionOne-Bold.ttf.F_F_T_M_.ttx PassionOne-Bold.ttf.D_S_I_G_.ttx PassionOne-Black.ttf._p_r_e_p.ttx PassionOne-Black.ttf._p_o_s_t.ttx PassionOne-Black.ttf._n_a_m_e.ttx PassionOne-Black.ttf._m_a_x_p.ttx PassionOne-Black.ttf._l_o_c_a.ttx PassionOne-Black.ttf._h_m_t_x.ttx PassionOne-Black.ttf._h_h_e_a.ttx PassionOne-Black.ttf._h_e_a_d.ttx PassionOne-Black.ttf._g_l_y_f.ttx PassionOne-Black.ttf._g_a_s_p.ttx PassionOne-Black.ttf._c_m_a_p.ttx PassionOne-Black.ttf.O_S_2f_2.ttx PassionOne-Black.ttf.GlyphOrder.ttx PassionOne-Black.ttf.G_D_E_F_.ttx PassionOne-Black.ttf.F_F_T_M_.ttx PassionOne-Black.ttf.D_S_I_G_.ttx src/PassionOne-Regular.otf._p_o_s_t.ttx src/PassionOne-Regular.otf._n_a_m_e.ttx src/PassionOne-Regular.otf._m_a_x_p.ttx src/PassionOne-Regular.otf._h_m_t_x.ttx src/PassionOne-Regular.otf._h_h_e_a.ttx src/PassionOne-Regular.otf._h_e_a_d.ttx src/PassionOne-Regular.otf._c_m_a_p.ttx src/PassionOne-Regular.otf.O_S_2f_2.ttx src/PassionOne-Regular.otf.GlyphOrder.ttx src/PassionOne-Regular.otf.C_F_F_.ttx src/PassionOne-Bold.otf._p_o_s_t.ttx src/PassionOne-Bold.otf._n_a_m_e.ttx src/PassionOne-Bold.otf._m_a_x_p.ttx src/PassionOne-Bold.otf._h_m_t_x.ttx src/PassionOne-Bold.otf._h_h_e_a.ttx src/PassionOne-Bold.otf._h_e_a_d.ttx src/PassionOne-Bold.otf._c_m_a_p.ttx src/PassionOne-Bold.otf.O_S_2f_2.ttx src/PassionOne-Bold.otf.GlyphOrder.ttx src/PassionOne-Bold.otf.C_F_F_.ttx src/PassionOne-Black.otf._p_o_s_t.ttx src/PassionOne-Black.otf._n_a_m_e.ttx src/PassionOne-Black.otf._m_a_x_p.ttx src/PassionOne-Black.otf._h_m_t_x.ttx src/PassionOne-Black.otf._h_h_e_a.ttx src/PassionOne-Black.otf._h_e_a_d.ttx src/PassionOne-Black.otf._c_m_a_p.ttx src/PassionOne-Black.otf.O_S_2f_2.ttx src/PassionOne-Black.otf.GlyphOrder.ttx src/PassionOne-Black.otf.C_F_F_.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources
+### (2 of 6) pyfontaine
+### (3 of 6) Run upstream tests
+$ fontbakery-check.py upstream-repo sources
+$ fontaine --collections subsets --text /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Black.otf.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Bold.otf.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Regular.otf.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Black.ttf.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Bold.ttf.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Regular.ttf.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Black-SFD.sfd /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Bold-SFD.sfd /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Regular-TTF.sfd > fontaine.txt
+WARNING: Please install [PyICU](https://pypi.python.org/pypi/PyICU) toenable [feature], perhaps with: pip install pyicu
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_contours(): OK
+pyfontaine error: Not a TrueType or OpenType font (bad sfntVersion)
+pyfontaine process has been failed
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_points(): OK
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_test_prepolation_glyph_names(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_component(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_mark_to_mark(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_own_glyphs(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_bakery_yaml_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_copyright_notices_same_across_family(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_description_html_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_fontlog_txt_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_metadata_json_exists(): OK
+$ fontbakery-check.py upstream-ttx PassionOne-Black.otf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Black.otf.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Black.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ fontbakery-check.py upstream-ttx PassionOne-Bold.otf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Bold.otf.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Bold.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ fontbakery-check.py upstream-ttx PassionOne-Regular.otf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Regular.otf.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/Passion-Bold.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ fontbakery-check.py upstream-ttx PassionOne-Black.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Black.ttf.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Black.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ fontbakery-check.py upstream-ttx PassionOne-Bold.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Bold.ttf.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Bold.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ fontbakery-check.py upstream-ttx PassionOne-Regular.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Regular.ttf.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Regular.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ fontbakery-check.py upstream PassionOne-Black-SFD.sfd
+bakery_lint.tests.upstream.test_unicode_value_should_appear_only_once_per_font.UnicodeValueShouldAppearOnlyOnce.testUnicodeValue(): ERROR
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+bakery_lint.tests.upstream.test_contour_count.TestContourCount.test_contour_count(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+$ fontbakery-check.py upstream PassionOne-Bold-SFD.sfd
+bakery_lint.tests.upstream.test_unicode_value_should_appear_only_once_per_font.UnicodeValueShouldAppearOnlyOnce.testUnicodeValue(): ERROR
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+bakery_lint.tests.upstream.test_contour_count.TestContourCount.test_contour_count(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+$ fontbakery-check.py upstream PassionOne-Regular-TTF.sfd
+bakery_lint.tests.upstream.test_unicode_value_should_appear_only_once_per_font.UnicodeValueShouldAppearOnlyOnce.testUnicodeValue(): ERROR
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+bakery_lint.tests.upstream.test_contour_count.TestContourCount.test_contour_count(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+### (4 of 6) Convert sources to TTF
+$ ttx -d /home/travis/build/fontdirectory/passionone/builds/build /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Regular.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Bold.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Black.ttx /home/travis/build/fontdirectory/passionone/builds/build/sources/Passion-Bold.ttx
+strippedname:/home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Black-SFD.sfd
+strippedname:/home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Bold-SFD.sfd
+strippedname:/home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Regular-TTF.sfd
+Compiling "/home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Regular.ttx" to "/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'prep' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'FFTM' table...
+Parsing 'GDEF' table...
+Parsing 'DSIG' table...
+Compiling "/home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Bold.ttx" to "/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'prep' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'FFTM' table...
+Parsing 'GDEF' table...
+Parsing 'DSIG' table...
+Compiling "/home/travis/build/fontdirectory/passionone/builds/build/sources/PassionOne-Black.ttx" to "/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'prep' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'FFTM' table...
+Parsing 'GDEF' table...
+Parsing 'DSIG' table...
+Compiling "/home/travis/build/fontdirectory/passionone/builds/build/sources/Passion-Bold.ttx" to "/home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.otf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'name' table...
+Parsing 'cmap' table...
+Parsing 'post' table...
+Parsing 'CFF ' table...
+Parsing 'hmtx' table...
+### Test PassionOne-Regular.ttf
+$ fontbakery-check.py result PassionOne-Regular.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): FAIL
+$ fontbakery-fix-vertical-metrics.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.otf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.otf.fix /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.otf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+$ fontbakery-fix-vertical-metrics.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.otf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+Parameter              PassionOne-Regular.ttf    Passion-Bold.otf    PassionOne-Black.ttf    PassionOne-Bold.ttf    
+ymax                   835                       835                 790                     832                    
+hhea.ascent            835                       835                 835                     835                    
+OS/2.sTypoAscender     835                       835                 835                     835                    
+OS/2.usWinAscent       835                       835                 835                     835                    
+ymin                   -198                      -198                -226                    -181                   
+hhea.descent           -226                      -226                -226                    -226                   
+OS/2.sTypoDescender    -226                      -226                -226                    -226                   
+OS/2.usWinDescent      226                       226                 226                     226                    
+hhea.lineGap           0                         0                   0                       0                      
+OS/2.sTypoLineGap      0                         0                   0                       0                      
+hhea total             1061                      1061                1061                    1061                   
+typo total             1061                      1061                1061                    1061                   
+win total              1061                      1061                1061                    1061                   
+UPM:Heights            1000:1033                 1000:1033           1000:1016               1000:1013              
+UPM:Heights %          103 %                     103 %               101 %                   101 %                  
+
+
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+### Optimize TTF PassionOne-Regular.ttf
+$ ls -l 'PassionOne-Regular.ttf'* # look at the size savings of that subset process
+PassionOne-Regular.ttf.opt: 23248 bytes
+PassionOne-Regular.ttf: 25264 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf.opt /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+### Autohint TTFs (ttfautohint) PassionOne-Regular.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf '/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf: 23248 bytes
+/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.autohint.ttf: 43408 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.autohint.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+### Subset TTFs (pyftsubset) PassionOne-Regular.ttf
+$ pyftsubset PassionOne-Regular.latin
+$ pyftsubset PassionOne-Regular.menu
+strippedname:/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+spaceWidth is    210
+nbspWidth is     210
+Nothing to do
+### Test PassionOne-Bold.ttf
+$ fontbakery-check.py result PassionOne-Bold.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+### Optimize TTF PassionOne-Bold.ttf
+$ ls -l 'PassionOne-Bold.ttf'* # look at the size savings of that subset process
+PassionOne-Bold.ttf.opt: 23096 bytes
+PassionOne-Bold.ttf: 25064 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf.opt /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+### Autohint TTFs (ttfautohint) PassionOne-Bold.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf '/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf: 23096 bytes
+/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.autohint.ttf: 41032 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.autohint.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+### Subset TTFs (pyftsubset) PassionOne-Bold.ttf
+$ pyftsubset PassionOne-Bold.latin
+$ pyftsubset PassionOne-Bold.menu
+strippedname:/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+spaceWidth is    190
+nbspWidth is     190
+Nothing to do
+### Test PassionOne-Black.ttf
+$ fontbakery-check.py result PassionOne-Black.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+### Optimize TTF PassionOne-Black.ttf
+$ ls -l 'PassionOne-Black.ttf'* # look at the size savings of that subset process
+PassionOne-Black.ttf.opt: 22624 bytes
+PassionOne-Black.ttf: 24600 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf.opt /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+### Autohint TTFs (ttfautohint) PassionOne-Black.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf '/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf: 22624 bytes
+/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.autohint.ttf: 42032 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.autohint.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+### Subset TTFs (pyftsubset) PassionOne-Black.ttf
+$ pyftsubset PassionOne-Black.latin
+$ pyftsubset PassionOne-Black.menu
+strippedname:/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+spaceWidth is    175
+nbspWidth is     175
+Nothing to do
+$ fontbakery-build-font2ttf.py sources/Passion-Bold.otf Passion-Bold.ttf
+Warning: Mac string is a subset of the Windows string in the 'name' table
+ for the Family string in the English (US) language.
+Warning: Mac and Windows entries in the 'name' table differ for the
+ SubFamily string in the language English (US)
+ Mac String: Bold
+Windows String: Regular
+Warning: Mac and Windows entries in the 'name' table differ for the
+ Fullname string in the language English (US)
+ Mac String: Passion One
+Windows String: PassionOne-Regular
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf)
+strippedname:/home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.otf
+### Test Passion-Bold.ttf
+$ fontbakery-check.py result Passion-Bold.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): FAIL
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+### Optimize TTF Passion-Bold.ttf
+$ ls -l 'Passion-Bold.ttf'* # look at the size savings of that subset process
+Passion-Bold.ttf.opt: 23284 bytes
+Passion-Bold.ttf: 25560 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf.opt /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+### Autohint TTFs (ttfautohint) Passion-Bold.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf '/home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf: 23284 bytes
+/home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.autohint.ttf: 43740 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.autohint.ttf /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+### Subset TTFs (pyftsubset) Passion-Bold.ttf
+$ pyftsubset Passion-Bold.latin
+$ pyftsubset Passion-Bold.menu
+strippedname:/home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+spaceWidth is    210
+nbspWidth is     210
+Nothing to do
+$ fontbakery-build-font2ttf.py sources/PassionOne-Black-SFD.sfd PassionOne-Black-SFD.ttf
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf)
+### Test PassionOne-Black-SFD.ttf
+$ fontbakery-check.py result PassionOne-Black-SFD.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): FAIL
+$ fontbakery-fix-vertical-metrics.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+$ fontbakery-fix-vertical-metrics.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+Parameter              PassionOne-Black-SFD.ttf    Passion-Bold.ttf    PassionOne-Black.ttf    PassionOne-Bold.ttf    PassionOne-Regular.ttf    
+ymax                   790                         835                 790                     832                    835                       
+hhea.ascent            835                         835                 835                     835                    835                       
+OS/2.sTypoAscender     835                         835                 835                     835                    835                       
+OS/2.usWinAscent       835                         835                 835                     835                    835                       
+ymin                   -226                        -198                -226                    -181                   -198                      
+hhea.descent           -226                        -226                -226                    -226                   -226                      
+OS/2.sTypoDescender    -226                        -226                -226                    -226                   -226                      
+OS/2.usWinDescent      226                         226                 226                     226                    226                       
+hhea.lineGap           0                           0                   0                       0                      0                         
+OS/2.sTypoLineGap      0                           0                   0                       0                      0                         
+hhea total             1061                        1061                1061                    1061                   1061                      
+typo total             1061                        1061                1061                    1061                   1061                      
+win total              1061                        1061                1061                    1061                   1061                      
+UPM:Heights            1000:1016                   1000:1033           1000:1016               1000:1013              1000:1033                 
+UPM:Heights %          101 %                       103 %               101 %                   101 %                  103 %                     
+
+
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): FAIL
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+### Optimize TTF PassionOne-Black-SFD.ttf
+$ ls -l 'PassionOne-Black-SFD.ttf'* # look at the size savings of that subset process
+PassionOne-Black-SFD.ttf.opt: 22616 bytes
+PassionOne-Black-SFD.ttf: 24832 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf.opt /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+### Autohint TTFs (ttfautohint) PassionOne-Black-SFD.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf '/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf: 22616 bytes
+/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.autohint.ttf: 42316 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.autohint.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+### Subset TTFs (pyftsubset) PassionOne-Black-SFD.ttf
+$ pyftsubset PassionOne-Black-SFD.latin
+$ pyftsubset PassionOne-Black-SFD.menu
+strippedname:/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+spaceWidth is    175
+nbspWidth is     175
+Nothing to do
+$ fontbakery-build-font2ttf.py sources/PassionOne-Bold-SFD.sfd PassionOne-Bold-SFD.ttf
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf)
+### Test PassionOne-Bold-SFD.ttf
+$ fontbakery-check.py result PassionOne-Bold-SFD.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): FAIL
+$ fontbakery-fix-vertical-metrics.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+$ fontbakery-fix-vertical-metrics.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+Parameter              PassionOne-Bold-SFD.ttf    PassionOne-Black-SFD.ttf    PassionOne-Regular.ttf    PassionOne-Bold.ttf    PassionOne-Black.ttf    Passion-Bold.ttf    
+ymax                   832                        790                         835                       832                    790                     835                 
+hhea.ascent            835                        835                         835                       835                    835                     835                 
+OS/2.sTypoAscender     835                        835                         835                       835                    835                     835                 
+OS/2.usWinAscent       835                        835                         835                       835                    835                     835                 
+ymin                   -181                       -226                        -198                      -181                   -226                    -198                
+hhea.descent           -226                       -226                        -226                      -226                   -226                    -226                
+OS/2.sTypoDescender    -226                       -226                        -226                      -226                   -226                    -226                
+OS/2.usWinDescent      226                        226                         226                       226                    226                     226                 
+hhea.lineGap           0                          0                           0                         0                      0                       0                   
+OS/2.sTypoLineGap      0                          0                           0                         0                      0                       0                   
+hhea total             1061                       1061                        1061                      1061                   1061                    1061                
+typo total             1061                       1061                        1061                      1061                   1061                    1061                
+win total              1061                       1061                        1061                      1061                   1061                    1061                
+UPM:Heights            1000:1013                  1000:1016                   1000:1033                 1000:1013              1000:1016               1000:1033           
+UPM:Heights %          101 %                      101 %                       103 %                     101 %                  101 %                   103 %               
+
+
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): FAIL
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+### Optimize TTF PassionOne-Bold-SFD.ttf
+$ ls -l 'PassionOne-Bold-SFD.ttf'* # look at the size savings of that subset process
+PassionOne-Bold-SFD.ttf.opt: 23112 bytes
+PassionOne-Bold-SFD.ttf: 25328 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf.opt /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+### Autohint TTFs (ttfautohint) PassionOne-Bold-SFD.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf '/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf: 23112 bytes
+/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.autohint.ttf: 41252 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.autohint.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+### Subset TTFs (pyftsubset) PassionOne-Bold-SFD.ttf
+$ pyftsubset PassionOne-Bold-SFD.latin
+$ pyftsubset PassionOne-Bold-SFD.menu
+strippedname:/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+spaceWidth is    190
+nbspWidth is     190
+Nothing to do
+$ fontbakery-build-font2ttf.py sources/PassionOne-Regular-TTF.sfd PassionOne-Regular-TTF.ttf
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf)
+### Test PassionOne-Regular-TTF.ttf
+$ fontbakery-check.py result PassionOne-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): FAIL
+$ fontbakery-fix-vertical-metrics.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+$ fontbakery-fix-vertical-metrics.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold-SFD.ttf /home/travis/build/fontdirectory/passionone/builds/build/Passion-Bold.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Bold.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Black-SFD.ttf
+Parameter              PassionOne-Regular-TTF.ttf    PassionOne-Bold-SFD.ttf    Passion-Bold.ttf    PassionOne-Black.ttf    PassionOne-Bold.ttf    PassionOne-Regular.ttf    PassionOne-Black-SFD.ttf    
+ymax                   835                           832                        835                 790                     832                    835                       790                         
+hhea.ascent            835                           835                        835                 835                     835                    835                       835                         
+OS/2.sTypoAscender     835                           835                        835                 835                     835                    835                       835                         
+OS/2.usWinAscent       835                           835                        835                 835                     835                    835                       835                         
+ymin                   -198                          -181                       -198                -226                    -181                   -198                      -226                        
+hhea.descent           -226                          -226                       -226                -226                    -226                   -226                      -226                        
+OS/2.sTypoDescender    -226                          -226                       -226                -226                    -226                   -226                      -226                        
+OS/2.usWinDescent      226                           226                        226                 226                     226                    226                       226                         
+hhea.lineGap           0                             0                          0                   0                       0                      0                         0                           
+OS/2.sTypoLineGap      0                             0                          0                   0                       0                      0                         0                           
+hhea total             1061                          1061                       1061                1061                    1061                   1061                      1061                        
+typo total             1061                          1061                       1061                1061                    1061                   1061                      1061                        
+win total              1061                          1061                       1061                1061                    1061                   1061                      1061                        
+UPM:Heights            1000:1033                     1000:1013                  1000:1033           1000:1016               1000:1013              1000:1033                 1000:1016                   
+UPM:Heights %          103 %                         101 %                      103 %               101 %                   101 %                  103 %                     101 %                       
+
+
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ fontbakery-fix-glyph-private-encoding.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+$ fontbakery-fix-nbsp.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): FAIL
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+### Optimize TTF PassionOne-Regular-TTF.ttf
+$ ls -l 'PassionOne-Regular-TTF.ttf'* # look at the size savings of that subset process
+PassionOne-Regular-TTF.ttf.opt: 23184 bytes
+PassionOne-Regular-TTF.ttf: 25464 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf.opt /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+### Autohint TTFs (ttfautohint) PassionOne-Regular-TTF.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf '/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf: 23184 bytes
+/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.autohint.ttf: 43436 bytes
+$ mv /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.autohint.ttf /home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+### Subset TTFs (pyftsubset) PassionOne-Regular-TTF.ttf
+$ pyftsubset PassionOne-Regular-TTF.latin
+$ pyftsubset PassionOne-Regular-TTF.menu
+strippedname:/home/travis/build/fontdirectory/passionone/builds/build/PassionOne-Regular-TTF.ttf
+spaceWidth is    210
+nbspWidth is     210
+Nothing to do
+### (5 of 6) Generate METADATA.json (fontbakery-build-metadata.py)
+$ fontbakery-build-metadata.py /home/travis/build/fontdirectory/passionone/builds/build
+{} exists
+Designer's name from font is: Alejandro Lo Celso
+Original size: 43408\nGzip size: 22563
+Family Name: Passion One
+PS Name: PassionOne-Regular
+Full Name: PassionOne-Regular
+Style: normal
+Weight: 400
+Filename: PassionOne-Regular-TTF.ttf
+Copyright: Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name "Passion"
+Family Name: Passion One
+PS Name: PassionOne-Black
+Full Name: PassionOne-Black
+Style: normal
+Weight: 900
+Filename: PassionOne-Black-SFD.ttf
+Copyright: Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name "Passion"
+Family Name: Passion One
+PS Name: PassionOne-Regular
+Full Name: Passion One
+Style: normal
+Weight: 400
+Filename: PassionOne-Regular.ttf
+Copyright: Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name "Passion"
+Family Name: Passion One
+PS Name: PassionOne-Bold
+Full Name: Passion One Bold
+Style: normal
+Weight: 700
+Filename: PassionOne-Bold.ttf
+Copyright: Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name "Passion"
+Family Name: Passion One
+PS Name: PassionOne-Black
+Full Name: Passion One Black
+Style: normal
+Weight: 900
+Filename: PassionOne-Black.ttf
+Copyright: Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name "Passion"
+Family Name: Passion One
+PS Name: PassionOne-Regular
+Full Name: PassionOne-Regular
+Style: normal
+Weight: 400
+Filename: Passion-Bold.ttf
+Copyright: Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name "Passion"
+Family Name: Passion One
+PS Name: PassionOne-Bold
+Full Name: PassionOne-Bold
+Style: normal
+Weight: 700
+Filename: PassionOne-Bold-SFD.ttf
+Copyright: Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name "Passion"
+### (6 of 6) Run tests for METADATA.json
+$ fontbakery-check.py metadata METADATA.json
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_latin(): OK
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_latin_ext(): FAIL
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_menu(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_description_is_more_than_500b(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_description_is_valid_html(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_daltonmaag_catalogue(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontbureau_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontscom_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontshop_catalogue(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontsmith_catalogue(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_houseind_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_myfonts_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_veer_catalogue(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_family_is_listed_in_gwf(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_atleast_latin_menu_subsets_exist(): OK
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/tests/metadata_test.py:141: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+  self.assertTrue(designer in designers,
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_designer_exists_in_profiles_csv(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_items_dicts(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_key_list(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_no_dupes(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_has_unique_style_weight_pairs(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_keys(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_license(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_no_unknown_top_keys(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_subsets_key_list(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_top_keys_types(): OK
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_contains_correct_rfn(): OK
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_is_consistent_across_family(): OK
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_matches_pattern(): OK
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_metadata_copyright_size(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.TestFontOnDiskFamilyEqualToMetadataJSON.test_font_on_disk_family_equal_in_metadata_json(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.TestPostScriptNameInMetadataEqualFontOnDisk.test_postscriptname_in_metadata_equal_to_font_on_disk(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_font_name_matches_family(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_family_values_are_all_the_same(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_filename_matches_postscriptname(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_font_have_regular(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fonts_fields_have_fontname(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fullname_is_equal_to_internal_font_fullname(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fullname_matches_postScriptName(): FAIL
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_regular_is_400(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_regular_is_normal(): FAIL
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_copyrighttxt_exists(): FAIL
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_description_exists(): OK
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_fontlogtxt_exists(): OK
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_licensetxt_exists(): FAIL
+bakery_lint.tests.downstream.test_check_subsets_exists.CheckSubsetsExist.test_check_subsets_exists(): FAIL
+bakery_lint.tests.downstream.test_check_monospace_agreements.CheckMonospaceAgreement.test_check_monospace_agreement(): OK
+bakery_lint.tests.downstream.test_check_metadata_style_matches_names.CheckItalicStyleMatchesMacStyle.test_check_italic_style_matches_names(): OK
+bakery_lint.tests.downstream.test_check_metadata_style_matches_names.CheckNormalStyleMatchesMacStyle.test_check_normal_style_matches_names(): OK
+bakery_lint.tests.downstream.test_check_metadata_matches_nametable.CheckMetadataMatchesNameTable.test_check_metadata_matches_nametable(): OK
+bakery_lint.tests.downstream.test_check_metadata_fields.CheckMetadataFields.test_check_metadata_fields(): OK
+bakery_lint.tests.downstream.test_check_menu_contains_proper_glyphs.CheckMenuSubsetContainsProperGlyphs.test_check_menu_contains_proper_glyphs(): OK
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_encodings_of_glyphs_across_family(): OK
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_names_of_glyphs_across_family(): OK
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_number_of_glyphs_across_family(): OK
+bakery_lint.tests.downstream.test_check_font_name_not_in_camelcase.CheckFontNameNotInCamelCase.test_fontname_not_in_camel_case(): OK
+bakery_lint.tests.downstream.test_check_files_menu_agreements.CheckFontsMenuAgreements.test_menu_file_agreement(): OK
+bakery_lint.tests.downstream.test_check_familyname_matches_fontnames.CheckFamilyNameMatchesFontNames.test_check_familyname_matches_fontnames(): OK
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckCanonicalWeights.test_check_canonical_weights(): OK
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckPostScriptNameMatchesWeight.test_postscriptname_contains_correct_weight(): OK
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckFontWeightSameAsInMetadata.test_font_weight_same_as_in_metadata(): OK
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckFullNameEqualCanonicalName.test_metadata_contains_current_font(): OK
+bakery_lint.tests.downstream.test_check_canonical_styles.CheckCanonicalStyles.test_check_canonical_styles(): OK
+bakery_lint.tests.downstream.test_check_canonical_filenames.CheckCanonicalFilenames.test_check_canonical_filenames(): OK
+{
+  "name": "Passion One", 
+  "designer": "Fontstage", 
+  "license": "OFL", 
+  "visibility": "External", 
+  "category": "Display", 
+  "size": 14143, 
+  "fonts": [
+    {
+      "name": "Passion One", 
+      "postScriptName": "PassionOne-Regular", 
+      "fullName": "PassionOne-Regular", 
+      "style": "normal", 
+      "weight": 400, 
+      "filename": "PassionOne-Regular-TTF.ttf", 
+      "copyright": "Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name \"Passion\""
+    }, 
+    {
+      "name": "Passion One", 
+      "postScriptName": "PassionOne-Black", 
+      "fullName": "PassionOne-Black", 
+      "style": "normal", 
+      "weight": 900, 
+      "filename": "PassionOne-Black-SFD.ttf", 
+      "copyright": "Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name \"Passion\""
+    }, 
+    {
+      "name": "Passion One", 
+      "postScriptName": "PassionOne-Regular", 
+      "fullName": "Passion One", 
+      "style": "normal", 
+      "weight": 400, 
+      "filename": "PassionOne-Regular.ttf", 
+      "copyright": "Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name \"Passion\""
+    }, 
+    {
+      "name": "Passion One", 
+      "postScriptName": "PassionOne-Bold", 
+      "fullName": "Passion One Bold", 
+      "style": "normal", 
+      "weight": 700, 
+      "filename": "PassionOne-Bold.ttf", 
+      "copyright": "Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name \"Passion\""
+    }, 
+    {
+      "name": "Passion One", 
+      "postScriptName": "PassionOne-Black", 
+      "fullName": "Passion One Black", 
+      "style": "normal", 
+      "weight": 900, 
+      "filename": "PassionOne-Black.ttf", 
+      "copyright": "Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name \"Passion\""
+    }, 
+    {
+      "name": "Passion One", 
+      "postScriptName": "PassionOne-Regular", 
+      "fullName": "PassionOne-Regular", 
+      "style": "normal", 
+      "weight": 400, 
+      "filename": "Passion-Bold.ttf", 
+      "copyright": "Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name \"Passion\""
+    }, 
+    {
+      "name": "Passion One", 
+      "postScriptName": "PassionOne-Bold", 
+      "fullName": "PassionOne-Bold", 
+      "style": "normal", 
+      "weight": 700, 
+      "filename": "PassionOne-Bold-SFD.ttf", 
+      "copyright": "Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name \"Passion\""
+    }
+  ], 
+  "subsets": [
+    "latin", 
+    "menu"
+  ], 
+  "dateAdded": "2011-12-13"
+}

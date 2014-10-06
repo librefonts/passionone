@@ -1,0 +1,7 @@
+commit: HEAD
+process_files: [PassionOne-Regular.ttf.ttx, PassionOne-Bold.ttf.ttx, PassionOne-Black.ttf.ttx,
+  src/PassionOne-Regular.otf.ttx, src/PassionOne-Bold.otf.ttx, src/PassionOne-Black.otf.ttx,
+  src/PassionOne-Regular-TTF.sfd, src/PassionOne-Bold-SFD.sfd, src/PassionOne-Black-SFD.sfd]
+pyftsubset: --notdef-outline --name-IDs=* --hinting
+subset: [latin]
+ttfautohint: -l 7 -r 28 -G 50 -x 13 -w "G"
